@@ -1,9 +1,9 @@
 import React from "react";
 
 const Card = (props) => {
-    const { image, title, description } = props.cards; // Extrae los valores
+    const { image, title, description } = props.cards;
     return (
-        <div className="card h-100"> {/* h-100 para que todas las tarjetas tengan la misma altura */}
+        <div className="card h-100">
             <img src={image} className="card-img-top" style={{ height: '200px', objectFit: 'cover' }} alt={title} />
             <div className="card-body">
                 <h5 className="card-title">{title}</h5>
