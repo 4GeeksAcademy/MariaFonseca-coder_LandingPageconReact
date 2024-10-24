@@ -17,5 +17,4 @@ const Card = (props) => {
     );
 };
 
-// Exportar el componente
 export default Card;
