@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./navbar.jsx";
 import Jumbotron from "./jumbotron.jsx";
 import Card from "./card.jsx";
+import Footer from "./footer.jsx";
 
 const cards = [
 	{
@@ -34,13 +35,13 @@ const Home = () => {
 			<div className="container">
 				<div className="row">
 					{cards.map((item, index) => (
-						<div className="col-12 col-sm-1 col-md-3 col-lg-2 ms-5 me-5 mb-5" key={index}>
-							{/* <div className="col-12 col-sm-6 col-md-4 col-lg-3 ms-5 me-5 mb-5" key={index}> */}
+						<div className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4" key={index}>
 							<Card cards={item} />
 						</div>
 					))}
 				</div>
 			</div>
+			<Footer />
 		</div>
 	);
 };
