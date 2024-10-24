@@ -20,9 +20,9 @@ const cards = [
 		description: "Bosque con lindo paisaje",
 	},
 	{
-		image: "https://picsum.photos/id/37/200/300",
-		title: "Costa",
-		description: "Costa con lindo paisaje",
+		image: "https://picsum.photos/id/54/200/300",
+		title: "Montaña",
+		description: "Montaña con lindo paisaje",
 	}
 ];
 
@@ -34,7 +34,8 @@ const Home = () => {
 			<div className="container">
 				<div className="row">
 					{cards.map((item, index) => (
-						<div className="col-12 col-sm-6 col-md-4 col-lg-3" key={index}>
+						<div className="col-12 col-sm-1 col-md-3 col-lg-2 ms-5 me-5 mb-5" key={index}>
+							{/* <div className="col-12 col-sm-6 col-md-4 col-lg-3 ms-5 me-5 mb-5" key={index}> */}
 							<Card cards={item} />
 						</div>
 					))}
